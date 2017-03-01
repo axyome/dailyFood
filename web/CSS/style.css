@@ -1,0 +1,39 @@
+h2{
+	text-align: center;
+}
+
+.myTitle{
+
+	width: 80%;
+    height: 90%;
+    border: 1px solid blue;
+    box-sizing: border-box;
+
+    border-bottom-color:black;
+    border-left-color:black;
+    border-right-color:red;
+    border-top-color:red;
+    
+    margin: 10%;
+    padding: 1%;
+}
+
+.myContent
+{
+    text-align: center;
+    width:80%;
+    border-color: #cccccc;
+    border-style: groove;
+
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,130 @@
+nav
+{
+    margin: auto; 
+    padding: 0; 
+    width: available;
+}
+ul
+{
+    margin: auto; 
+    padding: 0; 
+    width: available;
+}
+
+li
+{
+    margin: auto; 
+    padding: 0; 
+    width: available;
+}
+
+a 
+{
+    margin: auto; 
+    padding: 0; 
+    width: available;
+    text-decoration: none;
+}
+
+body 
+{
+    margin: auto; 
+    padding: 0; 
+    width: available;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+}
+
+
+.container 
+{
+    width: 80%;
+    margin: 10px auto;
+    
+}
+.nav 
+{
+    list-style: none;
+     background:#175e4c;
+     text-align: center;
+     width: fit-content;
+}
+.nav:before,
+.nav:after {
+    content: " "; 
+    display: table; 
+    width: fit-content;
+}
+.nav:after {
+    clear: both;
+}
+.nav ul {
+    list-style: none;
+    width: 9em;
+}
+.nav a {
+    padding: 10px 15px;
+    color:#fff;
+}
+.nav li {
+    position: relative;
+}
+.nav > li {
+    float: left;
+    border-top: 1px solid #104336;
+}
+.nav > li > .parent {
+    background-image: url("images/downArrow.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.nav > li > a {
+    display: block;
+}
+.nav li  ul {
+    position: absolute;
+    left: -9999px;
+}
+.nav > li.hover > ul {
+    left: 0;
+}
+.nav li li.hover ul {
+    left: 100%;
+    top: 0;
+}
+.nav li li a {
+    display: block;
+    background: #1d7a62;
+    position: relative;
+    z-index:100;
+    border-top: 1px solid #175e4c;
+}
+.nav li li li a {
+    background:#249578;
+    z-index:200;
+    border-top: 1px solid #1d7a62;
+}
+
+@media screen and (max-width: 768px) {
+    .active {
+        display: block;
+    }
+    .nav > li {
+        float: none;
+    }
+    .nav > li > .parent {
+        background-position: 95% 50%;
+    }
+    .nav li li .parent {
+        background-image: url("images/downArrow.png");
+        background-repeat: no-repeat;
+        background-position: 95% 50%;
+    }
+    .nav ul {
+        display: block;
+        width: 100%;
+    }
+   .nav > li.hover > ul , .nav li li.hover ul {
+        position: static;
+    }
+
+}
