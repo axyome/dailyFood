@@ -20,12 +20,16 @@
     <h1><u>Weekly Food</u></h1>
     <br/>  
     
+    
+    
     <div align="center">
-        <h:form>
+        <img src="./IMG/Food_banner.jpg" class = "myContent"/>
+        <h:form class = "myMenu">
             <p:commandButton value ="Accueil" action='#{navigationController.setPage("accueil")}' update=":pge:pgeContent"/>
-            <p:commandButton value ="Générer le menu de la semaine" action='#{navigationController.setPage("underConstruct")}' update=":pge:pgeContent"/>
-            <p:commandButton value ="Générer la liste des courses" action='#{navigationController.setPage("underConstruct")}' update=":pge:pgeContent"/>
+            <p:commandButton value ="Menu de la semaine" action='#{navigationController.setPage("underConstruct")}' update=":pge:pgeContent"/>
+            <p:commandButton value ="Rechercher une recette" action='#{navigationController.setPage("underConstruct")}' update=":pge:pgeContent"/>
             <p:commandButton value ="Ajouter une recette" action='#{navigationController.setPage("underConstruct")}' update=":pge:pgeContent"/>
+            <p:commandButton value ="Ajouter un ingrédient" action='#{navigationController.setPage("underConstruct")}' update=":pge:pgeContent"/>
             
 
         </h:form>
